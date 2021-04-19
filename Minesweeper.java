@@ -73,18 +73,18 @@ public class Minesweeper {
     public void run() {
     	System.out.println("        _");
     	System.out.println("  /\\/\\ (_)_ __   ___  ______      _____  ___ _ ___   ___ _ __");
-		System.out.println(" /    \\| | '_ \\ / _ \\/  __\\ \\ /\\ / / _ \\/ _ \\ '   \\ / _ \\ '__|");
-		System.out.println("/ /\\/\\ \\ | | | |  __/\\__  \\\\ v  v /  __/  __/ |_)  |  __/ |");
-		System.out.println("\\/    \\/_|_| |_|\\___||____/ \\_/\\_/ \\___|\\___| -___/ \\___|_|");
-		System.out.println("                                      ALPHA |_| EDITION");
-		System.out.println();
-		System.out.println();
-		if ((rows > 10||rows < 0)||(cols > 10||cols < 0)) { //if the # of rows and columns are greater than 10 or less than 0, an error prints out and ends the game
+	System.out.println(" /    \\| | '_ \\ / _ \\/  __\\ \\ /\\ / / _ \\/ _ \\ '   \\ / _ \\ '__|");
+	System.out.println("/ /\\/\\ \\ | | | |  __/\\__  \\\\ v  v /  __/  __/ |_)  |  __/ |");
+	System.out.println("\\/    \\/_|_| |_|\\___||____/ \\_/\\_/ \\___|\\___| -___/ \\___|_|");
+	System.out.println("                                      ALPHA |_| EDITION");
+	System.out.println();
+	System.out.println();
+	if ((rows > 10||rows < 0)||(cols > 10||cols < 0)) { //if the # of rows and columns are greater than 10 or less than 0, an error prints out and ends the game
     		System.out.println("Cannot create a mine field with that many rows and/or columns!");
     		System.exit(0);
     	}
-		System.out.println();
-		System.out.println("Rounds Completed: " + roundsCompleted);
+	System.out.println();
+	System.out.println("Rounds Completed: " + roundsCompleted);
     	System.out.println();
     	createField(grid, mineGrid);
     	if (!(seedFile == null)) {
